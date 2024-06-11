@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>良 第五章：官兵</title>
+		<link rel="stylesheet" href="css/章节.css" />
+	</head>
+	<body>
+		<div class="one">
+			<div class="two">
+				<div class="two-one">
+					<img src="img/章节图片/白光笼罩.png" alt="" />
+				</div>
+				<div class="two-two">
+					<span>良 第五章：官兵</span>
+				</div>
+				<div class="fanhui">
+					<a href=游戏配音.html>返回</a>
+				</div>
+			</div>
+			<div class="three">
+				<div class="three-one">
+					<span>满穗配音</span>
+				</div>
+				<div class="three-two">
+					<div class="yanping">
+						<audio id="audio1" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\83嗯因为那些官兵不像好人我不能信他们.mp3' preload="auto"></audio>
+						<audio id="audio2" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\84他们没走官道行军的时候也没什么纪律很可能是逃兵.mp3' preload="auto"></audio>  
+						<audio id="audio3" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\85若是向逃兵求救他们把我们带走待我们还不如良爷呢.mp3' preload="auto"></audio>  
+						<audio id="audio4" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\86哦良爷有件事想和你说一下.mp3' preload="auto"></audio>  
+						<audio id="audio5" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\87除了兴爷外大概都知道我不是哑巴了.mp3' preload="auto"></audio>  
+						<audio id="audio6" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\88那些官兵来的时候我给琼华说过话红儿和翠儿也听见了.mp3' preload="auto"></audio>
+						<audio id="audio7" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\89嘿嘿我也是觉得良爷信得过才这么干的嘛.mp3' preload="auto"></audio>
+						<audio id="audio8" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\90对了良爷今天还想学影子戏吗.mp3' preload="auto"></audio>
+						<audio id="audio9" src='img\音频\pr 音频素材\饿殍：原语音\第五章：官兵\91为什么啊良爷之前是为什么那样啊.mp3' preload="auto"></audio>
+
+						<button class="audio-trigger" onclick="playAudio('audio1')">嗯因为那些官兵不像好人我不能信他们</button>  
+						<button class="audio-trigger" onclick="playAudio('audio2')">他们没走官道行军的时候也没什么纪律很可能是逃兵</button>  
+						<button class="audio-trigger" onclick="playAudio('audio3')">若是向逃兵求救他们把我们带走待我们还不如良爷呢</button>  
+						<button class="audio-trigger" onclick="playAudio('audio4')">哦良爷有件事想和你说一下</button>  
+						<button class="audio-trigger" onclick="playAudio('audio5')">除了兴爷外大概都知道我不是哑巴了</button>
+						<button class="audio-trigger" onclick="playAudio('audio6')">那些官兵来的时候我给琼华说过话红儿和翠儿也听见了</button>
+						<button class="audio-trigger" onclick="playAudio('audio7')">嘿嘿我也是觉得良爷信得过才这么干的嘛</button>
+						<button class="audio-trigger" onclick="playAudio('audio8')">对了良爷今天还想学影子戏吗</button>
+						<button class="audio-trigger" onclick="playAudio('audio9')">为什么啊良爷之前是为什么那样啊</button>
+			
+				</div>
+			</div>
+		</div>
+		<script>
+		
+		
+			function playAudio(audioId) {
+				var audio = document.getElementById(audioId);
+				var audios = document.getElementsByTagName('audio');
+				for (var i = 0; i < audios.length; i++) {
+					if (audios[i] !== audio && audios[i].paused === false) {
+						audios[i].pause();
+					}
+				}
+				audio.play();
+			}
+		</script>
+	</body>
+</html>

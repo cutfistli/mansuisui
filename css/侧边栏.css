@@ -1,0 +1,50 @@
+		body {  
+			    margin: 0;  
+			    padding: 0;  
+			    display: flex;  
+			    justify-content: center;  
+			    align-items: flex-start;  
+			    height: 100vh;  
+			}  
+			  
+			.sidebar {  
+			    width: 100px; /* 侧边栏宽度 */  
+			    height: 100%; /* 根据需要设置 */  
+			    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */  
+			    position: fixed; /* 固定位置 */  
+			    left: 0; /* 侧边栏位置 */  
+			    top: 0;  
+			    display: flex;  
+			    flex-direction: column;  
+			    align-items: center;  
+			    justify-content: space-around; /* 链接垂直居中 */  
+			    padding: 20px; /* 内边距 */  
+			    box-sizing: border-box; /* 包含内边距和边框 */
+				transition: left 0.3s ease;
+			}  
+			  
+			.sidebar a {  
+			    color: white; /* 链接颜色 */  
+			    text-decoration: none; /* 去除下划线 */  
+			    display: block; /* 块级元素以便点击整个区域 */  
+			    padding: 10px; /* 链接内边距 */  
+				/* border: 1px solid red; */
+			    transition: background-color 0.3s ease;  /* 平滑过渡效果  */
+			}  
+			  
+			.sidebar a:hover {  
+			    background-color: rgba(255, 255, 255, 0.1); /* 鼠标悬停时背景颜色 */  
+			    cursor: pointer; /* 鼠标悬停时变为手形图标 */  
+			}
+			.footer {
+				height: 200px;background-color: #ff55ff;
+				margin-top: 10px;
+			}
+			.clearfix::before,
+			.clearfix:after {
+				content: "";
+				display: block;
+			}
+			.clearfix::after {
+				clear: both;
+			}

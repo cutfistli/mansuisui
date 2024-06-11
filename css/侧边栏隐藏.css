@@ -1,0 +1,28 @@
+.sidebar.hide {
+            left: -250px;
+			transition: left 0.3s ease;
+        }
+           
+        .sidebar-toggle {
+            position: fixed;
+/*            bottom: 5px;
+			left: 150px; */
+            cursor: pointer;
+            color:blue;
+            z-index: 1000;
+        }
+        #sidebarToggle {
+			position: absolute;
+			bottom: 8px;
+			left: 150px;
+		}
+		#sidebarToggleRight {
+			position: absolute;
+			bottom: 8px;
+			right: 250px;	
+		}
+
+        .yanping.hide {
+            right: -250px;
+			transition: right 0.3s ease;
+        }

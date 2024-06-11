@@ -1,0 +1,47 @@
+.two {
+				width: 1200px;
+				height: 210px;
+				position: relative;
+			}
+			.two-one {
+				width: 300px;
+				height: 210px;
+				float: left;
+			}
+			.two-one img {
+				width: 300px;
+				height: 210px;
+			}
+			.two-two {
+				width: 900px;
+				height: 50px;
+				text-align: center;
+			}
+			.three {
+				width: 1200px;
+				height: 210px;
+			}
+			.fanhui {
+				width: 900px;
+				height: 160px;
+			}
+			.fanhui a {
+				position: absolute;
+				text-decoration: none;
+				width: 80px;
+				height: 30px;
+				line-height: 30px;
+				background-color: #000000;
+				color: #ffffff;
+				text-align: center;
+				bottom: 10px;
+				right: 10px;
+				border-radius: 10px 0 0 10px;
+			}
+			.yanping button {
+				display: block;
+				width: 1200px;
+				height: 25px;
+				/* padding-left: 5px; */
+				text-align: left;
+			}

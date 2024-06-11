@@ -1,0 +1,83 @@
+			* {
+				margin: 0;
+				padding: 0;
+				/* background-image: url("img/满穗/插画/b7e125e2313032e23df55f5680b81a6.jpg"); */
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				/* float: right; */
+						}
+			/* 图片过大限制大小 */
+			.left img {
+				width: 70px;
+				height: 70px;
+				/* 设置圆角 */
+				border-radius: 10px ;
+			}
+			/* 设置版心 */
+			.inner {
+				/* 先看一下边框确定一下位置 */
+				/* border: 1px solid red; */
+				/* 设置一个文章大小 */
+				width: 1000px;
+				/* 居中 */
+				margin: 0 auto;				
+			}
+			/* 文章的左右是在一行 但是我们的内容左和右都是块级元素div 改为行内快元素就在一行了 */
+			.left,
+			.right {
+				display: inline-block;
+				/*1:做完zixun后 开始制作元素的浮动 设置完毕浮动之后发现往上移
+				往上移动 是因为浮动就是横放 本来div是块级元素 浮起来就在一行了
+				我们设置左边和右边的div浮动在一行*/
+				float: left;
+			}
+			a {
+				/* 设置字体粗细 700加粗 400细线 */
+				font-weight: 700;
+				/* 字体颜色为黑色 */
+				color: black;
+				/* 去除下划线 */
+				text-decoration: none;
+			}
+			/* span效果设置 */
+			.my-font {
+				/* 设置后面字体为灰色 */
+				color: black;
+				/* 字体大小 */
+				font-size: 12px;
+			}
+			.zixun {
+				color: #747478;
+				font-size: 12px;
+				width: 100px;
+				display: inline-block;
+				background-color: #efefef;
+				/* 居中显示 */
+				text-align: center;
+				/* 在整个高度 并且上下居中 */
+				height: 25px;
+				line-height: 25px;
+				/* 设置个圆边 我们的高度是30 所以圆边是15 */
+				border-radius: 15px;
+			}
+			/* 2:设置外边距 图片和右边的内容是左右分开的 想让字体往右设置右面div的外边距即可 */
+			.right {
+				margin-left: 15px;
+				/* 给右边的字体内容区域加一个下边线 */
+				border-bottom: 1px solid #d2d2d2;
+				/* 线太靠近字体 往下放 下内边距为10 内边距就是内容和边框的距离 我们这里是和下边框的距离 */
+				padding-bottom: 10px;
+				/* background-color: rgba(27, 40, 56,0.6) */
+				/* 线太短 长一些 */
+				width: 900px;
+			}
+			.xia {
+				/* 设置字体往下 */
+				/* 和下的内容是兄弟关系,设置外边距 我们设置的仅仅是下面的div所以只有下面的字亿 */
+				margin-top:10px;
+			}
+			/* 取消版心的浮动 浮动只需要左右浮动即可 左右内容在版心inner中 */
+			.cd {
+				clear: both;
+			}

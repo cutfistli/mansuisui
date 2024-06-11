@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>良 第六章：荒村</title>
+		<link rel="stylesheet" href="css/章节.css" />
+	</head>
+	<body>
+		<div class="one">
+			<div class="two">
+				<div class="two-one">
+					<img src="img/章节图片/吃人荒村.png" alt="" />
+				</div>
+				<div class="two-two">
+					<span>良 第六章：荒村</span>
+				</div>
+				<div class="fanhui">
+					<a href=游戏配音.html>返回</a>
+				</div>
+			</div>
+			<div class="three">
+				<div class="three-one">
+					<span>满穗配音</span>
+				</div>
+				<div class="three-two">
+					<div class="yanping">
+						<audio id="audio1" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\92良爷.mp3' preload="auto"></audio>
+						<audio id="audio2" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\93解手.mp3' preload="auto"></audio>  
+						<audio id="audio3" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\94呼谢谢良爷陪我出来解手天这么黑我自己的话肯定不敢.mp3' preload="auto"></audio>  
+						<audio id="audio4" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\95怕啊我当然怕黑了都不敢自己走夜路.mp3' preload="auto"></audio>  
+						<audio id="audio5" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\96怕啊当然怕他们看起来好像要吃了我们哩.mp3' preload="auto"></audio>  
+						<audio id="audio6" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\97良爷今天你和兴爷看了一间屋子那个屋子有什么.mp3' preload="auto"></audio>
+						<audio id="audio7" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\98是人的.mp3' preload="auto"></audio>
+						<audio id="audio8" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\99良爷其他孩子不会跟兴爷说我不是哑巴的事吧.mp3' preload="auto"></audio>
+						<audio id="audio9" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\100也是她们都怕兴爷毕竟兴爷之前差点想杀翠儿.mp3' preload="auto"></audio>
+						<audio id="audio10" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\101哦我觉得大家是喜欢良爷的有事的时候大家现在都找良爷.mp3' preload="auto"></audio>
+						<audio id="audio11" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\102呜良爷真记仇.mp3' preload="auto"></audio>
+						<audio id="audio12" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\103不疼了.mp3' preload="auto"></audio>
+						<audio id="audio13" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\104是真的我们只要一到洛阳就会被送到妖怪的餐桌上.mp3' preload="auto"></audio>
+						<audio id="audio14" src='img\音频\pr 音频素材\饿殍：原语音\第六章：荒村\105但是我不怕我要给姐姐报仇.mp3' preload="auto"></audio>
+	
+						<button class="audio-trigger" onclick="playAudio('audio1')">良爷</button>
+						<button class="audio-trigger" onclick="playAudio('audio2')">解手</button>  
+						<button class="audio-trigger" onclick="playAudio('audio3')">呼谢谢良爷陪我出来解手天这么黑我自己的话肯定不敢</button>  
+						<button class="audio-trigger" onclick="playAudio('audio4')">怕啊我当然怕黑了都不敢自己走夜路</button>  
+						<button class="audio-trigger" onclick="playAudio('audio5')">怕啊当然怕他们看起来好像要吃了我们哩</button>  
+						<button class="audio-trigger" onclick="playAudio('audio6')">良爷今天你和兴爷看了一间屋子那个屋子有什么</button>
+						<button class="audio-trigger" onclick="playAudio('audio7')">是人的</button>
+						<button class="audio-trigger" onclick="playAudio('audio8')">良爷其他孩子不会跟兴爷说我不是哑巴的事吧</button>
+						<button class="audio-trigger" onclick="playAudio('audio9')">也是她们都怕兴爷毕竟兴爷之前差点想杀翠儿</button>
+						<button class="audio-trigger" onclick="playAudio('audio10')">哦我觉得大家是喜欢良爷的有事的时候大家现在都找良爷</button>
+						<button class="audio-trigger" onclick="playAudio('audio11')">呜良爷真记仇</button>
+						<button class="audio-trigger" onclick="playAudio('audio12')">不疼了</button>
+						<button class="audio-trigger" onclick="playAudio('audio13')">是真的我们只要一到洛阳就会被送到妖怪的餐桌上</button>
+						<button class="audio-trigger" onclick="playAudio('audio14')">但是我不怕我要给姐姐报仇</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		
+		
+			function playAudio(audioId) {
+				var audio = document.getElementById(audioId);
+				var audios = document.getElementsByTagName('audio');
+				for (var i = 0; i < audios.length; i++) {
+					if (audios[i] !== audio && audios[i].paused === false) {
+						audios[i].pause();
+					}
+				}
+				audio.play();
+			}
+		</script>
+	</body>
+</html>

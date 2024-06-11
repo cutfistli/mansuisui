@@ -1,0 +1,53 @@
+* {
+				margin: 0;
+				padding: 0;
+				/* background-image: url("img/满穗/插画/b7e125e2313032e23df55f5680b81a6.jpg"); */
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				/* float: right; */
+			}
+			.banner {
+				width: 950px;
+				height: 200px;
+				background-color: green;
+				margin: 10px auto;
+				padding-top: 10px;
+			}
+			.main {
+				width: 950px;
+				margin: 10px auto;
+				opacity: 0.9;
+			}
+			.main div {
+				float: left;
+				width: 230px;
+				height: 400px;
+				background-color: rgba(27, 40, 56,0.8);
+				margin-bottom: 10px;
+				margin-right: 10px;
+				text-align: center;
+			}
+			.main div img {
+				height: 90%;
+				width: 100%;
+				border-radius: 10px;
+			}
+			.main div img:hover {
+				cursor: pointer;
+			}
+			.main div span {
+				height: 30px;
+				line-height: 30px;
+			}
+			.main div span:hover {
+				background-color: #b1b1b8;
+				cursor: pointer;
+			}
+			/* .last4 {
+				margin-right: 0px;
+			} */
+			.main .last4 {
+				margin-right: 0px;
+			}
+			

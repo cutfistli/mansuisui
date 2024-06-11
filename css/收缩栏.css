@@ -1,0 +1,74 @@
+ 
+.triangle-button {  
+	display: inline-block;  
+	width: 0;  
+	height: 0;  
+	border-left: 5px solid transparent;  
+	border-right: 5px solid transparent;  
+	border-bottom: 10px solid black; /* 三角形颜色 */  
+	margin-right: 5px; /* 三角形和文本之间的间距 */  
+	transition: transform 0.3s ease-in-out; /* 可选的过渡效果 */  
+}  
+.collapsible-container {  
+  display: flex;  
+  flex-direction: column; /* 垂直堆叠伸缩栏 */  
+}  
+  
+.collapsible {  
+ background-color: rgba(27, 40, 56,0.6);/* 可选，用于可视化效果 */  
+  width: 950px;
+  margin-bottom: 10px; /* 可选，用于分隔伸缩栏 */  
+}  
+  
+.collapsible-header {  
+  /* 你的标题样式 */  
+	cursor: pointer;
+	display: inline-block;
+	width: 950px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 5px;
+	/* border: 1px solid red; */
+}    
+  
+.collapsible-content {  
+  overflow-y: auto; /* 启用垂直滚动 */  
+  max-height: 0; /* 初始时高度为0，内容不可见 */  
+  transition: max-height 0.3s ease; /* 过渡效果 */  
+}  
+.collapsible-content {
+	color: aliceblue;
+}
+  
+/* 当checkbox被选中时，显示内容并设置内容区域的高度 */  
+#collapseCheckbox1:checked ~ .collapsible-content,  
+#collapseCheckbox2:checked ~ .collapsible-content,
+#collapseCheckbox3:checked ~ .collapsible-content,
+#collapseCheckbox4:checked ~ .collapsible-content,
+#collapseCheckbox5:checked ~ .collapsible-content,
+#collapseCheckbox6:checked ~ .collapsible-content {  
+	/* width: 950px; */
+	max-height: 500px; /* 根据需要设置足够大的值 */  
+	background-color: rgba(27, 40, 56,0.6);
+}  
+/* 选中时改变三角形的方向（可选） */  
+#collapseCheckbox:checked ~ .collapsible-header .triangle-button {  
+  transform: rotate(180deg);  
+  /* 如果需要，还可以改变边框颜色等 */  
+}
+
+/* 其他样式... */
+#collapseCheckbox1, 
+#collapseCheckbox2,
+#collapseCheckbox3,
+#collapseCheckbox4,
+#collapseCheckbox5,
+#collapseCheckbox6 {  
+  opacity: 0;  
+  width: 0;  
+  height: 0;  
+  position: absolute;  
+  /* 还可以添加 clip-path: circle(0); 来完全裁剪掉checkbox */  
+}  
+  
+/* 其他样式... */

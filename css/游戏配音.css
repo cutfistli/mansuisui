@@ -1,0 +1,102 @@
+body {
+			background-image: url("img/满穗/插画/满穗与良.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.biaoti {
+			/* position: relative; */
+			width: 1200px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 32px;
+		}
+        .zongyinping {
+            width: 1200px;
+            height: 500px;
+			position: relative;
+			left: 100px;
+            /* border: 1px solid red; */
+        }
+        .nrzhangjie {
+            width: 250px;
+            height: 500px;
+            position: relative;
+            float: left;
+            /* border: 1px solid red; */
+			background-color: rgba(130, 130, 130,0.6);
+            margin-right: 20px;
+        }
+        .img img{
+            width: 220px;
+            height: 100px;	
+            /* float: left; */
+        }
+        .img {
+            position: relative;
+            width: 250px;
+            height: 100px;
+			text-align: center;
+			/* top: 30px; */
+            /* float: left; */
+        }
+		.zhangjie {
+			width: 190px;
+			height: 30px;
+			display: inline-block;
+			position: relative;
+			margin-top: 10px;
+			left: 10px;
+		}
+        .jieshao {
+            width: 200px;
+            height: 300px;
+            position: relative;
+			left: 40px;
+            /* border: 1px solid red; */
+        }
+        .jieshao span {
+            width: 190px;
+            display: inline-block;
+            margin-top: 10px;
+			
+        }
+		.jrcd {
+			position: absolute;
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			background-color: #000000;
+			/* color: #ffffff; */
+			right: 0;
+			text-align: center;
+			margin-bottom: 10px;
+			border-radius: 10px 0 0 10px ;
+			
+		}
+		.jrcd a {
+			text-decoration: none;
+			/* position: absolute; */
+			color: #ffffff;
+		}
+		.cundang span {
+			margin: 20px;
+			background-color: #000000;
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			line-height: 30px;
+			border-radius: 15px;
+		}
+		.cundang span a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+		.cundang {
+			position: absolute;
+			bottom: 10px;
+			width: 1200px;
+			height: 50px;
+			text-align: center;
+		}

@@ -1,0 +1,70 @@
+.fullscreenvideo {  
+    position: fixed; /* 相对于浏览器窗口进行定位 */  
+    top: 50%; /* 将元素的顶部边缘设置为其父元素垂直居中的位置 */  
+    left: 50%; /* 将元素的左边缘设置为其父元素水平居中的位置 */  
+    width: 100%;
+    height: auto; /* 根据需要自动调整高度 */  
+    z-index: -100; /* 设置较低的z-index值，以确保视频在内容下方 */  
+    transform: translateX(-50%) translateY(-50%); /* 将元素的中心与其父元素的中心对齐 */  
+    transition: 1s opacity; /* 可选：设置淡入淡出效果 */  
+}  
+
+.videocontainer {  
+    position: fixed; /* 相对于浏览器窗口进行定位 */  
+    top: 0; /* 从顶部开始 */  
+    left: 0; /* 从左侧开始 */  
+    width: 100%; /* 宽度为100% */  
+    height: 100%; /* 高度为100% */  
+    overflow: hidden; /* 隐藏超出容器的内容 */  
+    z-index: -101; /* 设置比视频更低的z-index值，以确保容器在视频下方 */ 
+}
+body .yanping {  
+		width: 200px;  
+		/* 设置一个固定的高度，以触发滚动条 */  
+		height: 100%; /* 例如，你可以根据需要调整这个值 */  
+		position: fixed;  
+		right: 0;  
+		bottom: 0;  
+		/* margin-top 不再需要，因为我们设置了固定的高度 */  
+		overflow-y: auto; /* 添加垂直滚动条 */  
+		background-color: rgba(27, 40, 56, 0.6);
+		transition: right 0.3s ease;
+	}  
+			  
+	body .yanping button {  
+		display: block; /* 使用块级元素以便按钮垂直堆叠 */  
+		width: 100%; /* 使用100%宽度以适应容器 */  
+		height: 25px;  
+		margin-bottom: 5px; /* 添加一些底部外边距以分隔按钮 */  
+		border-radius: 10px;
+	}
+	.srcft a:first-child {
+		position: absolute;
+		bottom: 10px;
+		left: 115px;
+		text-decoration: none;
+		color: blue;
+	}	
+	.srcft a:last-child {
+		position: absolute;
+		bottom: 10px;
+		right: 215px;
+		text-decoration: none;
+		color: blue;
+	}
+	.audio-trigger {
+		margin-top: 10px;
+		word-spacing: normal;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+
+/* #audioButton {
+	border: 1px solid red;
+	margin-bottom: 10px;
+} */
+/* .yinping p{
+	border: 1px solid red;
+} */
